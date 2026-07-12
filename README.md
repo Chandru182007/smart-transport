@@ -1,12 +1,5 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
-
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/fa47a0f0-7b33-4fed-8730-b5a33bc5cb86
+# Pioneering Intelligent Fleet Operations Across India
+From the bustling docks of Chennai to the critical logistics hubs of Delhi NCR and Bengaluru, we engineer robust depot orchestration tools that keep Indian logistics agile, safe, and cost-efficient.
 
 ## Run Locally
 
