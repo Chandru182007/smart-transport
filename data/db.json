@@ -1,0 +1,218 @@
+{
+  "vehicles": [
+    {
+      "registrationNumber": "MH-12-TC-4501",
+      "nameModel": "BharatBenz 2823R Heavy Truck",
+      "type": "Truck",
+      "maxCapacity": 15000,
+      "odometer": 125000,
+      "acquisitionCost": 8500000,
+      "status": "On Trip",
+      "region": "Maharashtra"
+    },
+    {
+      "registrationNumber": "MH-12-QE-1022",
+      "nameModel": "Force Traveller T1 Van",
+      "type": "Van",
+      "maxCapacity": 1200,
+      "odometer": 45000,
+      "acquisitionCost": 1800000,
+      "status": "Available",
+      "region": "Maharashtra"
+    },
+    {
+      "registrationNumber": "KA-01-MY-9903",
+      "nameModel": "Ashok Leyland Airawat Bus",
+      "type": "Bus",
+      "maxCapacity": 5000,
+      "odometer": 180000,
+      "acquisitionCost": 6500000,
+      "status": "In Shop",
+      "region": "Karnataka"
+    },
+    {
+      "registrationNumber": "DL-3C-CB-1124",
+      "nameModel": "Maruti Suzuki Ertiga Tour M",
+      "type": "Car",
+      "maxCapacity": 400,
+      "odometer": 25000,
+      "acquisitionCost": 950000,
+      "status": "Retired",
+      "region": "Delhi NCR"
+    }
+  ],
+  "drivers": [
+    {
+      "name": "Rajesh Kumar",
+      "licenseNumber": "MH-12-DL-1100",
+      "licenseCategory": "Class A Heavy",
+      "licenseExpiryDate": "2028-09-12",
+      "contactNumber": "+91-98765-43210",
+      "safetyScore": 98,
+      "status": "On Trip",
+      "tripsCompleted": 45
+    },
+    {
+      "name": "Priya Sharma",
+      "licenseNumber": "MH-12-DL-2244",
+      "licenseCategory": "Class B Medium",
+      "licenseExpiryDate": "2027-04-18",
+      "contactNumber": "+91-91234-56789",
+      "safetyScore": 95,
+      "status": "Available",
+      "tripsCompleted": 30
+    },
+    {
+      "name": "Amit Patel",
+      "licenseNumber": "KA-01-DL-3399",
+      "licenseCategory": "Class C Standard",
+      "licenseExpiryDate": "2026-02-15",
+      "contactNumber": "+91-88888-77777",
+      "safetyScore": 88,
+      "status": "Off Duty",
+      "tripsCompleted": 12
+    },
+    {
+      "name": "Sandeep Singh",
+      "licenseNumber": "DL-03-DL-4488",
+      "licenseCategory": "Class A Heavy",
+      "licenseExpiryDate": "2027-11-30",
+      "contactNumber": "+91-77777-66666",
+      "safetyScore": 65,
+      "status": "Suspended",
+      "tripsCompleted": 18
+    }
+  ],
+  "trips": [
+    {
+      "id": "TRIP-101",
+      "source": "Mumbai Central Depot",
+      "destination": "Pune Logistics Hub",
+      "vehicleRegNo": "MH-12-TC-4501",
+      "driverLicenseNo": "MH-12-DL-1100",
+      "cargoWeight": 8500,
+      "plannedDistance": 150,
+      "status": "Dispatched",
+      "createdDate": "2026-07-11"
+    },
+    {
+      "id": "TRIP-102",
+      "source": "Thane Warehouse",
+      "destination": "Mumbai Central Depot",
+      "vehicleRegNo": "MH-12-QE-1022",
+      "driverLicenseNo": "MH-12-DL-2244",
+      "cargoWeight": 800,
+      "plannedDistance": 40,
+      "status": "Completed",
+      "createdDate": "2026-07-09",
+      "completedDate": "2026-07-09"
+    },
+    {
+      "id": "TRIP-103",
+      "source": "Delhi Depot",
+      "destination": "Gurugram Hub",
+      "vehicleRegNo": "MH-12-QE-1022",
+      "driverLicenseNo": "MH-12-DL-2244",
+      "cargoWeight": 300,
+      "plannedDistance": 35,
+      "status": "Draft",
+      "createdDate": "2026-07-10"
+    }
+  ],
+  "maintenanceLogs": [
+    {
+      "id": "MNT-201",
+      "vehicleRegNo": "KA-01-MY-9903",
+      "serviceType": "Engine Overhaul",
+      "cost": 75000,
+      "date": "2026-07-10",
+      "status": "Active"
+    },
+    {
+      "id": "MNT-202",
+      "vehicleRegNo": "MH-12-QE-1022",
+      "serviceType": "General Servicing",
+      "cost": 4500,
+      "date": "2026-06-15",
+      "status": "Completed"
+    }
+  ],
+  "fuelLogs": [
+    {
+      "id": "FUEL-301",
+      "vehicleRegNo": "MH-12-TC-4501",
+      "date": "2026-07-08",
+      "liters": 120,
+      "cost": 11000
+    },
+    {
+      "id": "FUEL-302",
+      "vehicleRegNo": "MH-12-QE-1022",
+      "date": "2026-07-09",
+      "liters": 45,
+      "cost": 4100
+    }
+  ],
+  "expenses": [
+    {
+      "id": "EXP-401",
+      "tripId": "TRIP-102",
+      "vehicleRegNo": "MH-12-QE-1022",
+      "toll": 350,
+      "other": 150,
+      "maintLinked": false,
+      "total": 500,
+      "date": "2026-07-09",
+      "description": "Mumbai-Pune Expressway Toll"
+    },
+    {
+      "id": "EXP-402",
+      "vehicleRegNo": "MH-12-QE-1022",
+      "toll": 0,
+      "other": 0,
+      "maintLinked": true,
+      "total": 4500,
+      "date": "2026-06-15",
+      "description": "General Servicing Expense"
+    }
+  ],
+  "settings": {
+    "depotName": "Mumbai Central Dispatch Depot",
+    "currency": "INR",
+    "distanceLimit": 1000
+  },
+  "rbac": [
+    {
+      "role": "Fleet Manager",
+      "fleet": "yes",
+      "drivers": "yes",
+      "trips": "yes",
+      "fuelExp": "yes",
+      "analytics": "yes"
+    },
+    {
+      "role": "Driver",
+      "fleet": "view",
+      "drivers": "no",
+      "trips": "yes",
+      "fuelExp": "yes",
+      "analytics": "no"
+    },
+    {
+      "role": "Safety Officer",
+      "fleet": "view",
+      "drivers": "yes",
+      "trips": "view",
+      "fuelExp": "no",
+      "analytics": "view"
+    },
+    {
+      "role": "Financial Analyst",
+      "fleet": "view",
+      "drivers": "view",
+      "trips": "view",
+      "fuelExp": "yes",
+      "analytics": "yes"
+    }
+  ]
+}
